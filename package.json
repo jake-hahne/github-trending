@@ -1,0 +1,39 @@
+{
+  "$schema": "https://www.raycast.com/schemas/extension.json",
+  "name": "github-trending",
+  "title": "Github Trending",
+  "description": "Discover and explore the most popular and trending repositories on GitHub right from within Raycast!\nThe GitHub Trending extension keeps you up-to-date with the hottest projects and repositories that are capturing the attention of developers worldwide. With just a few keystrokes, you can access a curated list of trending repositories, making it easy to find innovative code, exciting new projects, and inspiring examples.",
+  "icon": "command-icon.png",
+  "author": "jake-hahne",
+  "owner": "jake-hahne-dev",
+  "categories": [
+    "Developer Tools"
+  ],
+  "license": "MIT",
+  "commands": [
+    {
+      "name": "index",
+      "title": "Browse Trending Repos",
+      "description": "Template for showing a static list and a detail view",
+      "mode": "view"
+    }
+  ],
+  "dependencies": {
+    "@raycast/api": "^1.72.1"
+  },
+  "devDependencies": {
+    "@raycast/eslint-config": "^1.0.6",
+    "@types/node": "20.8.10",
+    "@types/react": "18.2.27",
+    "eslint": "^8.51.0",
+    "prettier": "^3.0.3",
+    "typescript": "^5.2.2"
+  },
+  "scripts": {
+    "build": "ray build -e dist",
+    "dev": "ray develop",
+    "fix-lint": "ray lint --fix",
+    "lint": "ray lint",
+    "publish": "npx @raycast/api@latest publish"
+  }
+}
